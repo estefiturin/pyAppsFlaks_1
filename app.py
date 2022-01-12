@@ -1,10 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 from helper import pets
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
+  return render_template('home.html')
   return '''
     <h1>Adopt a Pet!</h1>
       <p> Browse through the links bewlow to find your new furry friend </p>
