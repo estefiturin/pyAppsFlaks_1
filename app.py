@@ -14,6 +14,8 @@ def index():
         <li><a href="/animals/rabbits">Rabbits</a></li>
       </ul>
     '''
+if __name__ == '__main__':
+     app.run()
 
 @app.route('/animals/<pet_type>')
 def animals(pet_type):
